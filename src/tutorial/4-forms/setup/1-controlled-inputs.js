@@ -6,7 +6,22 @@ import React, { useState } from 'react';
 // value, onChange
 
 const ControlledInputs = () => {
-  return <h1>controlled inputs</h1>;
+  return(
+  <>
+  <airticle>
+    <from className='form'>
+      <div className='form-control'>
+        <label htmlfor='firstName'>Name:</label>
+        <input type='text' name='firstName' id='firstName'></input>
+      </div>
+      <div className='form-control'>
+        <label htmlFor='email'>Email:</label>
+        <input type='email' name='email' id='email'></input>
+      </div>
+    </from>
+  </airticle>
+  </>
+  ); 
 };
 
 export default ControlledInputs;
